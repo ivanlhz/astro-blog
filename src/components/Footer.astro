@@ -1,13 +1,20 @@
 ---
-const plataformGithub = "github";
-const plataformInstagram = "instagram";
-const plataformTwitter = "twitter";
+import Social from "./Social.astro";
+
 const username = "ivanlhz";
 const instagramUsername = "kubicate"
 ---
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
 
 <footer>
-    <p>I am on <a href={`https://www.${plataformTwitter}.com/${username}`}>{plataformTwitter}</a>!</p>
-    <p>Learn more about my projects on <a href={`https://www.${plataformGithub}.com/${username}`}>{plataformGithub}</a>!</p>
-    <p>Look at my 3D creations on <a href={`https://www.${plataformInstagram}.com/${instagramUsername}`}>{plataformInstagram}</a>!</p>
+    <Social platform="twitter" username={username} />
+    <Social platform="github" username={username} />
+    <Social platform="instagram" username={instagramUsername} />
 </footer>
+
