@@ -80,3 +80,12 @@ h1 {
         display: none;
     }
 }
+/*dark theme*/
+html.dark {
+    background-color: #35495e;
+    color: #fff;
+}
+
+.dark .nav-links a {
+    color: #fff;
+}
